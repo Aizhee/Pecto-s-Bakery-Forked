@@ -276,20 +276,24 @@ left: 41%;
     position: relative;
 }
 .gallery-header h2::before{
-content: "";
-display:block;
-width: 50px;
-height: 3px;
-background: black;
-position: absolute;
-bottom: -8px;
-left: 38%;
+    content: "";
+    display:block;
+    width: 50px;
+    height: 3px;
+    background: black;
+    position: absolute;
+    bottom: -8px;
+    left: 38%;
 }
 
 .gallery-header p{
     color: #333;
     padding-top: 20px;
     padding-bottom: 30px;
+}
+
+.gallery-pictures>li>div>a{
+    font-size: 150%;
 }
 
 .categories {
@@ -334,7 +338,7 @@ left: 38%;
 }
 
 .categories li:hover::after {
-    background-color: rgba(0, 0, 0, 0.5); 
+    background-color: rgba(0, 0, 0, 0.733); 
 }
 
 /*for the overlay text*/
