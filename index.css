@@ -2,10 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Domine", serif;
 }
 
 body {
-    font-family: "Domine", serif;
+    
 }
 
 /*navigation section*/
@@ -53,7 +54,6 @@ body {
 
 button {
     padding: 10px 20px;
-    margin-right: 20px;
     font-size: 16px;
     background-color: #145369;
     border: none;
@@ -69,9 +69,9 @@ button:hover {
 
 /*1st image with its overlay*/
 .background img {
-    width: 1350px;
-    height: 620px;
-
+    width: 100%;
+    height: 90vh;
+    object-fit: cover; /* Crop the image to cover the container */
 }
 
 #welcome {
@@ -165,6 +165,7 @@ button:hover {
     color: black;
     position: relative;
 }
+
 .product-header h2::before{
 content: "";
 display:block;
@@ -193,24 +194,54 @@ left: 41%;
     display: flex;
     justify-content: space-between;
     margin-bottom: 40px;
+    justify-content: center;
 }
 
 #items li {
-    width: 23%;
     text-align: center;
 }
 
 #items img {
     width: 270px;
     height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
 
-.row4 {
-    padding-bottom: 50px;
+.specialties{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;   
 }
 
+.specialties>li{
+    padding: 5px;
+    position: relative;
+    display: inline-block;
+}
 
-
+.specialties>li>.buttons {
+    width: 100%;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0; /* Initially hide the button */
+    transition: opacity 0.3s ease;
+    z-index: 1;
+}
+.specialties>li:hover .buttons {
+    opacity: 1; /* Show the button on hover */
+}
 
 /*Gallery*/
 /*Settings for the small line at the bottom*/
@@ -238,17 +269,24 @@ left: 38%;
 }
 
 .categories {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
     padding-bottom: 40px;
 }
 .categories ul{
+    justify-content: center;
+    align-items: center;
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .categories img {
     width: 400px;
     height: 350px;
-    margin-bottom: 30px;
+    object-fit: cover;
 }
 
 .categories li {
@@ -264,7 +302,11 @@ left: 38%;
     width: 400px;
     height: 350px;
     background-color: rgba(0, 0, 0, 0);
-    transition: background-color 0.3s ease; 
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
 }
 
 .categories li:hover::after {
@@ -345,4 +387,8 @@ left: 38%;
 .social a {
     text-decoration: none;
     color: #333;
+}
+
+@media screen and (max-width: 90px) {
+    
 }
