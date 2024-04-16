@@ -19,7 +19,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 20px 20px 10px;
-    background-color: #2596be;
+    background-color:#b75408 ;
     height: 75px;
 }
 
@@ -35,6 +35,8 @@ body {
     transform: translateY(-50%);
     left: 50px;
     padding-top: 10px;
+    filter: drop-shadow(2px 0 0 white)         drop-shadow(0 2px 0 white)        drop-shadow(-2px 0 0 white)         drop-shadow(0 -2px 0 white);
+    -webkit-filter: drop-shadow(2px 0 0 white)         drop-shadow(0 2px 0 white)        drop-shadow(-2px 0 0 white)         drop-shadow(0 -2px 0 white);
 }
 
 .nav-links {
@@ -55,7 +57,7 @@ body {
 button {
     padding: 10px 20px;
     font-size: 16px;
-    background-color: #145369;
+    background-color: #432818;
     border: none;
     border-radius: 5px;
     color: white;
@@ -64,7 +66,8 @@ button {
 }
 
 button:hover {
-    background-color: #041014;
+    background-color: #ffe6a7;
+    color:#b75408;
 }
 
 /*1st image with its overlay*/
@@ -81,6 +84,7 @@ button:hover {
     background-color: rgba(255, 255, 255, 0.9);
     text-align: center;
     margin-top: -274px;
+    padding-bottom: 10%;
 }
 
 #welcome > div>h1 {
@@ -88,12 +92,14 @@ button:hover {
 }
 #welcome > div>h4 {
     font-size: 100%;
+    padding-left: 30px;
+    padding-right: 40px;
 }
 
 .content h1 {
     font-family: "Great Vibes", cursive;
     font-size: 66px;
-    color: #145369;
+    color: #432818;
     margin-bottom: 20px;
 }
 
@@ -121,7 +127,7 @@ button:hover {
 .message h2 {
     color: black;
     font-size: 28px;
-    border-bottom: 2px solid#2596be;
+    border-bottom: 2px solid#b75408;
     padding-bottom: 10px;
     
 }
@@ -139,7 +145,7 @@ button:hover {
     margin:auto;
     padding: 10px 20px;
     font-size: 16px;
-    background-color: #145369;  
+    background-color: #432818;  
     border-radius: 5px;
     color: white;
     cursor: pointer;
@@ -250,6 +256,11 @@ left: 41%;
     opacity: 1; /* Show the button on hover */
 }
 
+.specialties>li:hover img {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.864);
+}
+
+
 /*Gallery*/
 /*Settings for the small line at the bottom*/
 .gallery-header h2 {
@@ -345,14 +356,20 @@ left: 38%;
     flex-wrap: wrap;
     justify-content: space-around;
     padding: 30px 60px;
-    background-color: #2596be;
-    color: black;
+    background-color: #b75408;
+    color: rgb(255, 255, 255);
     gap: 40px;
     text-align: center;
 }
 
+#footer > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .About, .Contact, .map iframe {
-    width: 450px;
+    width: 350px;
     height: 250px;
 }
 
@@ -371,30 +388,29 @@ left: 38%;
     display:block;
     width: 55px;
     height: 3px;
-    background: black;
+    background: #432818;
     position: absolute;
     bottom: -8px;
     left: 42%;
 }
 
-.Contact p {
+.About p, .Contact p {
     margin: 5px 0;
-    color: #333;;
+    color: #ffffffa1;
 }
+
 
 .social {
     display: flex;
     align-items: center;
 }
 
-.social img {
-    width: 30px;
-    margin-right: 10px;
-}
+
 
 .social a {
+    margin-top: 5px;
     text-decoration: none;
-    color: #333;
+    color: #ffffffa1;
 }
 
 @media screen and (max-width: 90px) {
