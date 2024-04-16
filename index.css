@@ -83,6 +83,13 @@ button:hover {
     margin-top: -274px;
 }
 
+#welcome > div>h1 {
+    font-size: 300%;
+}
+#welcome > div>h4 {
+    font-size: 100%;
+}
+
 .content h1 {
     font-family: "Great Vibes", cursive;
     font-size: 66px;
@@ -335,6 +342,7 @@ left: 38%;
 /*Footer*/
 #footer {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     padding: 30px 60px;
     background-color: #2596be;
