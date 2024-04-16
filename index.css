@@ -114,10 +114,22 @@ button:hover {
 
 /*About Us*/
 #AboutUs {
-    padding: 140px;
+    padding: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#container-about {
+    gap: 20px;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    text-align: start;
+
 }
 
 .message {
@@ -134,10 +146,9 @@ button:hover {
 
 .message p {
     font-size: 16px;
-    text-align: center;
     line-height: 1.6;
     color: #333;
-    padding-bottom: px;
+    padding-bottom: 30px;
 }
 
 .message button {
@@ -161,11 +172,6 @@ button:hover {
     text-align: center;
 }
 
-.image img {
-    width: 100%;
-    max-width: 400px;
-    height: auto;
-}
 
 
 
