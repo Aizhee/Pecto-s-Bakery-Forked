@@ -563,15 +563,12 @@ left: 41%;
         opacity: 0;
     }
     
-    #logo {
-        margin-left: 20%;
-    }
 
     .menu-button-container {
         display: flex; 
         align-items: center;  
         position: absolute;
-        top: 28px;
+        top: 22px;
         left: 3%;
         width: 26px;
         height: 26px;
