@@ -328,7 +328,7 @@ left: 41%;
     background: black;
     position: absolute;
     bottom: -8px;
-    left: 5%;
+    left: 2%;
 }
 
 .gallery-header p{
@@ -632,6 +632,21 @@ left: 41%;
 
     .buttons button {
         padding: 10px 15px;
+    }
+    .map iframe {
+        width: 100%;
+    }
+    .gallery-pictures>li>* {
+        width: 100%;
+    }
+    .gallery-pictures>li::after {
+        width: 100%;
+    }
+    #nav-bar {
+        width: 100%;
+    }
+    #AboutUs * {
+        width: 100%;
     }
 }
 @media screen and (max-width: 425px) {
