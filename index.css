@@ -312,6 +312,7 @@ left: 41%;
 .gallery-header {
     padding-left: 35px;
     padding-left: 35px;
+    text-align: center;
 }
 
 .gallery-header h2 {
@@ -328,7 +329,7 @@ left: 41%;
     background: black;
     position: absolute;
     bottom: -8px;
-    left: 2%;
+    left: 35%;
 }
 
 .gallery-header p{
@@ -511,11 +512,13 @@ left: 41%;
     }
     /*1st image with its overlay*/
     #nav-bar .nav-links{
-        margin-top: 90px;
-        margin-bottom:20px;
+        
         flex-direction: column;
     }
-
+    .icons {
+        padding: 10px;
+        width: 100%;
+    }   
     #nav-bar {
         height: auto;
         align-items: start
