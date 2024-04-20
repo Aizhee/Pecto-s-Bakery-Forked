@@ -657,5 +657,11 @@ left: 41%;
     .specialties li {
         width: 100%;
     }
-}
 
+}
+@media screen and (max-width: 311px) {
+    .About{
+        margin-bottom: 170px;
+    }
+
+}
