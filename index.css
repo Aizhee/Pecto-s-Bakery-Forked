@@ -636,18 +636,12 @@ left: 41%;
     .buttons button {
         padding: 10px 15px;
     }
-    .map iframe {
-        width: 100%;
-    }
-    .gallery-pictures>li>* {
-        width: 100%;
-    }
-    .gallery-pictures>li::after {
-        width: 100%;
-    }
-    #nav-bar {
-        width: 100%;
-    }
+    
+    .map iframe,
+    .gallery-pictures>li,
+    .gallery-pictures>li>*,
+    .gallery-pictures>li::after,
+    #nav-bar,
     #AboutUs * {
         width: 100%;
     }
