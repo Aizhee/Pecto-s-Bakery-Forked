@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
@@ -14,19 +16,31 @@
 
     <body>
         <div id="nav-bar">
-            <div class="logo">
-                <img src="img/logo.png" alt="logo">
-            </div>
+            <nav class="main-nav hamburger-menu">
+				<div id="main_menu">
+					<input id="menu-toggle" type="checkbox" />
+					<label class='menu-button-container' for="menu-toggle">
+						<div class='menu-button'>
 
-            <div class="nav-links">
-                <ul class="icons">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Products</a></li>
-                    <li><a href="#">Gallery</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                </ul>
-            </div>
+                        </div>
+						<span></span>
+					</label>
+            
+                    <div class="logo">
+                        <img src="img/logo.png" alt="logo"draggable="false">
+                    </div>
+
+                    <div class="nav-links">
+                        <ul class="icons">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Products</a></li>
+                            <li><a href="#">Gallery</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
             <div class="buttons">
                 <button><i class="fa-solid fa-cart-shopping"></i></button>
                 <button><i class="fa fa-heart"></i></button>
@@ -34,7 +48,7 @@
         </div>
 
         <div class="background">
-            <img src="img/bread-bg.png" alt="front-image">
+            <img src="img/bread-bg.png" alt="front-image"draggable="false">
         </div>
 
         <div id="welcome">
@@ -55,7 +69,7 @@
         <div id="AboutUs">
             <div id="container-about">
             <div class="image">
-                <img src="img/2image.jpeg">
+                <img src="img/2image.jpeg"draggable="false">
             </div>
 
             <div class="message">
@@ -83,7 +97,7 @@
             <div id="items">
                 <ul class="specialties">
                     <li>
-                        <img src="img/Apas.png">
+                        <img src="img/Apas.png" draggable="false">
                         <h3>Special Apas</h3>
                         <h4>Price</h4>
                         <div class="buttons">
@@ -232,7 +246,7 @@
 
         <div id="gallery">
             <div class="gallery-header">
-                <center><h2>Our Delicious Creations</h2>
+                <h2>Our Delicious Creations</h2>
                 <p>Take a visual journey through our mouth-watering assortment of pastries and breads.</p></center>
             </div>
 
